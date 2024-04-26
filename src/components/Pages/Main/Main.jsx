@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Main/Main.css";
+import Banner from "../Banner/Banner";
 import not from "../../../img/Vector (21).png";
 import before2 from "../../../img/_before.png";
 import before from "../../../img/_before@2x.png";
@@ -10,6 +11,11 @@ import banner3 from "../../../img/banner-3.png.png";
 import starts from "../../../img/div.product-rating.png";
 import card from "../../../img/Vector (22).png";
 import meva from "../../../img/Group 475.png";
+import group2 from "../../../img/Group (2).png";
+import group3 from "../../../img/Group (3).png";
+import group4 from "../../../img/Group (4).png";
+import group5 from "../../../img/Group (5).png";
+import group6 from "../../../img/Group (6).png";
 import axios from "axios";
 const API_URL = "https://dummyjson.com/products";
 const Main = () => {
@@ -74,26 +80,7 @@ const Main = () => {
               </div>
             </div>
             <div className="main__mini__cards">
-              <div className="mini__card">
-                <img src={not} alt="" />
-                <h4 style={{ color: "rgb(59, 183, 126)" }}>Shopping</h4>
-              </div>
-              <div className="mini__card">
-                <img src={not} alt="" />
-                <h4>Recips</h4>
-              </div>
-              <div className="mini__card">
-                <img src={not} alt="" />
-                <h4 style={{ color: "rgb(59, 183, 126)" }}>Kitchen</h4>
-              </div>
-              <div className="mini__card">
-                <img src={not} alt="" />
-                <h4 style={{ color: "rgb(59, 183, 126)" }}>News</h4>
-              </div>
-              <div className="mini__card">
-                <img src={not} alt="" />
-                <h4 style={{ color: "rgb(59, 183, 126)" }}>Food</h4>
-              </div>
+              <Banner />
             </div>
           </div>
         </div>
@@ -131,19 +118,53 @@ const Main = () => {
           </div>
         </div>
         <div className="cards">
-          <div className="cards__text">
-            <h1>Popular Products</h1>
-            <div className="all_">
-              <p style={{ color: "green" }}>All</p>
-              <p>Milks & Dairies</p>
-              <p>Coffes & Teas</p>
-              <p>Pet Foods</p>
-              <p>Meats</p>
-              <p>Vegetables</p>
-              <p>Fruits</p>
+          <div className="card">
+            <div className="card_i">
+              <img src={group2} alt="" />
+            </div>
+            <div className="card_t">
+              <h4>Best prices & offers</h4>
+              <p>Orders $50 or more</p>
             </div>
           </div>
-          <div className="card_flex">{cardlar}</div>
+          <div className="card">
+            <div className="card_i">
+              <img src={group3} alt="" />
+            </div>
+            <div className="card_t">
+              <h4>Free delivery</h4>
+              <p>24/7 amazing services</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_i">
+              <img src={group4} alt="" />
+            </div>
+            <div className="card_t">
+              <h4>Great daily deal</h4>
+              <p>When you sign up</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_i">
+              <img src={group5} alt="" />
+            </div>
+            <div className="card_t">
+              <h4>Wide assortment</h4>
+              <p>Mega Discounts</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_i">
+              <img src={group6} alt="" />
+            </div>
+            <div className="card_t">
+              <h4>Easy returns</h4>
+              <p>
+                Within 30 <br /> days
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="footer">

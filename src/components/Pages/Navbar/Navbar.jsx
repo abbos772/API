@@ -8,6 +8,7 @@ import vector from "../../../img/Vector (17).png";
 import user from "../../../img/Vector (18).png";
 import heart from "../../../img/Vector (19).png";
 import card from "../../../img/Vector (20).png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const href = ["Home", "Category", "Products", "Pages", "Blog", "Elements"];
   let a = href?.map((el, ind) => {
@@ -50,8 +51,10 @@ const Navbar = () => {
           </div>
           <div className="login">
             <div className="acc">
-              <img src={user} alt="" />
-              <h3>Account</h3>
+              <a className="aa" href="../">
+                <img src={user} alt="" />
+                Account
+              </a>
             </div>
             <div className="acc">
               <img src={heart} alt="" />
